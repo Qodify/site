@@ -21,6 +21,9 @@
 </svelte:head>
 
 <body>
+  <div class="alert alert-warning" role="alert">
+    This site is not yet finished, don't expect to find a lot here.
+  </div>
 <Router>
   <NavbarBoot />
   <Route path="/" component={Home} />
