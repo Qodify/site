@@ -1,7 +1,5 @@
 <script>
-  import Navbar from "./layout/Navbar.svelte";
-  import NavbarFancy from "./layout/NavbarFancy.svelte";
-  import NavbarBoot from "./layout/NavbarBoot.svelte";
+  import NavbarBoot from "./layout/Navbar.svelte";
   import Footer from "./layout/Footer.svelte";
   import { Router, Route } from "svelte-routing";
   import Home from "./pages/Home.svelte";
@@ -28,6 +26,7 @@
   <NavbarBoot />
   <Route path="/" component={Home} />
   <Route path="blog" component={Blog} />
+
 </Router>
 </body>
 <Footer/>

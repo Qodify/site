@@ -1,41 +1,41 @@
 <script>
   import { Link } from "svelte-routing";
+
+  let current = "1";
 </script>
 
 <style>
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-
-  li {
-    float: left;
-  }
-
- nav > ul > li > :global(*) {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  nav > ul > li > :global(*):hover {
-    background-color: #111;
-  }
-
+  	.active {
+		background-color: #ff3e00;
+		color: red;
+	}
 </style>
 
-<nav>
-  <ul>
-    <li>
-      <Link to="/">About me</Link>
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <div>
+    <Link BSclass="navbar-brand" to="/">
+      <img
+        src="favicon.png"
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        alt=""
+        loading="lazy" />
+    </Link>
+  </div>
+
+  <ul class="navbar-nav mr-auto">
+    <li
+      class="nav-item px-3"
+      class:active={current === 1}
+      on:click={() => (current = '1')}>
+      <Link BSclass="nav-link" to="/">About me</Link>
     </li>
-    <li>
-      <Link to="blog">Blog</Link>
+    <li class="nav-item px-3">
+      <Link BSclass="nav-link" to="/blog">Blog</Link>
+    </li>
+    <li class="nav-item px-3">
+      <Link BSclass="nav-link" to="/contact">Contact</Link>
     </li>
   </ul>
 </nav>
