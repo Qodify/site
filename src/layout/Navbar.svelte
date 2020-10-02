@@ -1,21 +1,12 @@
 <script>
   import { Link } from "svelte-routing";
-
-  let current = "1";
 </script>
-
-<style>
-  	.active {
-		background-color: #ff3e00;
-		color: red;
-	}
-</style>
 
 <nav class="navbar navbar-expand navbar-light bg-light">
   <div>
     <Link BSclass="navbar-brand" to="/">
       <img
-        src="favicon.png"
+        src="../favicon.svg"
         width="30"
         height="30"
         class="d-inline-block align-top"
@@ -26,9 +17,7 @@
 
   <ul class="navbar-nav mr-auto">
     <li
-      class="nav-item px-3"
-      class:active={current === 1}
-      on:click={() => (current = '1')}>
+      class="nav-item px-3">
       <Link BSclass="nav-link" to="/">About me</Link>
     </li>
     <li class="nav-item px-3">
