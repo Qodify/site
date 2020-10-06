@@ -1,5 +1,7 @@
-<div class="container mx-auto mt-4">
-  <div class="col-12">
+<div class="container mt-0 mx-0">
+  <div class="row">
+      <div class="col-1 b-secondary"></div>
+  <div class="col-10 mt-5">
 
     <h2>Hi!</h2>
     <p>
@@ -16,9 +18,11 @@
     <br />
     <p>
       So you will probably find IT related posts here, but also other topics. That
-      is, if I find I'm finally done writing the website.
+      is, if I find I'm finally done writing the website code.
     </p>
   
 
   </div>  
+  </div>
+
 </div>

@@ -13,14 +13,14 @@
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <style>
-
+    body{
+      height:100vh
+    }
   </style>
 </svelte:head>
 
-<body>
-  <div class="alert alert-warning mb-0" role="alert">
-    This site is not yet finished, don't expect to find a lot here.
-  </div>
+<body class="">
+
 <Router>
   <Navbar/>
   <Route path="/" component={Home} />
