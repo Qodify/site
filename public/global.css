@@ -1,7 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700,500,600);
 
  body{
-   
   font-family: "Merriweather", Helvetica, Arial, sans-serif!important;
+  line-height: 24px;
+  color: #444;
 } 
+
+h5{
+  color: #999;
+  font-weight: 600;
+}
+
+h2{
+  line-height: 32px;
+
+}
+
 
